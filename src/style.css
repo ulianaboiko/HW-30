@@ -1,0 +1,53 @@
+body {
+  min-height: 300px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column; */
+}
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.block {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  animation-name: transform;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes transform {
+  0% {
+    transform: translate(0);
+    backgroung-color: red;
+  }
+  25% {
+    transform: translateY(180px);
+    background-color: blue;
+  }
+  50% {
+    transform: translateX(180px) translateY(180px);
+    background-color: green;
+  }
+  75% {
+    transform: translateX(180px);
+    background-color: yellow;
+  }
+  100% {
+    transform: translate(0);
+    backgroung-color: red;
+  }
+}
